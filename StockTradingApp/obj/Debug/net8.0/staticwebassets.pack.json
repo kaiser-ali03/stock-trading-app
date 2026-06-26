@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Dot-Net-Projects\\StockTradingApp\\StockTradingApp\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltopdf.exe"
+    },
+    {
+      "Id": "D:\\Dot-Net-Projects\\StockTradingApp\\StockTradingApp\\wwwroot\\Scripts\\FinnhubScript.js",
+      "PackagePath": "staticwebassets\\Scripts\\FinnhubScript.js"
+    },
+    {
+      "Id": "D:\\Dot-Net-Projects\\StockTradingApp\\StockTradingApp\\wwwroot\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\StyleSheet.css"
+    },
+    {
+      "Id": "D:\\Dot-Net-Projects\\StockTradingApp\\StockTradingApp\\wwwroot\\error.svg",
+      "PackagePath": "staticwebassets\\error.svg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.StockTradingApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.StockTradingApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.StockTradingApp.props",
+      "PackagePath": "build\\StockTradingApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.StockTradingApp.props",
+      "PackagePath": "buildMultiTargeting\\StockTradingApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.StockTradingApp.props",
+      "PackagePath": "buildTransitive\\StockTradingApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
