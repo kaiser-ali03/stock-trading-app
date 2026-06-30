@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("checkout"){
             steps{
-                git url
+                git 'https://github.com/kaiser-ali03/stock-trading-app.git'
             
             }
         }
