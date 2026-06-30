@@ -1,38 +1,32 @@
- pipeline{
+pipeline{
     agent any
     environment{
-        BUILD_CONFIG = 'release'
+        IMAGE_NAME = "dotnetApp"
+        IMAGE_TAG = '${BUILD_NUMBER}'
     }
-    stage("checkout"){
-        steps{
-            checkout scm
+    stages{
+        stage("checkout"){
+            steps{
+                git url
+            
+            }
         }
-    }
-    stage("restore"){
-        steps{
-            sh 'dotnet restore'
+        stage("docker build"){
+            steps{
+                sh '''
+                    docker build -t $IMAGE_NAME:$IMAGE_TAG .
+
+                '''
+            }
         }
-    }
-    stage("build"){
-        steps{
-            sh 'dotnet build --configuration $BUILD_CONFIG'
-        }
-    }
-    stage("test"){
-        steps{
-            sh 'dotnet test --no-build'
+        stage("check images"){
+            steps{
+                sh '''
+                    docker images
+
+                '''
+            }
         }
     }
 
-    stage("publish"){
-        steps{
-            sh 'dotnet publish --configuration $BUILD_CONFIG -o publish'
-        }
-    }
-
-    stage("archive"){
-        steps{
-            sh 'archiveArtifacts artifact: 'publish/**, fingerprint:true'
-        }
-    }
 }
